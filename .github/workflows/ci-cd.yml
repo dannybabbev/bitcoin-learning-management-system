@@ -1,6 +1,7 @@
 name: CI/CD
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - ci-refactoring
@@ -8,6 +9,8 @@ on:
       - testnet
       - dev
   pull_request:
+
+
 
 jobs:
   build_base:
